@@ -5,10 +5,9 @@ import Razorpaybutton from "./Razorpaybutton";
 function App() {
   return (
     <div className="App">
-      <Razorpaybutton />
-       {/* <Routes>
-        <Route exact path="/link/:url" element={ <Home /> } />
-      </Routes> */}
+       <Routes>
+        <Route exact path="/payment/:pay_amount" element={ <Razorpaybutton /> } />
+      </Routes>
     </div>
   );
 }
